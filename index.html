@@ -1,1 +1,151 @@
-<h1>Merhaba Dünya!</h1>
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Ali Özbey | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <header class="min-h-screen flex items-center justify-center relative px-4">
+        <div class="max-w-4xl w-full text-center">
+            <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
+                <div class="bg-[#0f172a] rounded-full p-4">
+                    <i class="fa-solid fa-code text-4xl text-blue-400"></i>
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">Mert Ali <span class="gradient-text">Özbey</span></h1>
+            <p class="text-xl md:text-2xl text-slate-400 mb-8">
+                JavaScript & React Focused Full-Stack Developer <br class="hidden md:block">
+                Data Analyst · AI Expert
+            </p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="mailto:mertozbeydev@gmail.com" class="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-700 transition font-medium">
+                    <i class="fa-solid fa-envelope mr-2"></i> İletişime Geç
+                </a>
+                <a href="#projects" class="px-6 py-3 rounded-full glass hover:bg-slate-800 transition font-medium">
+                    Projelerimi Gör
+                </a>
+            </div>
+
+            <div class="glass p-4 rounded-2xl max-w-sm mx-auto flex items-center gap-4 border-l-4 border-green-500">
+                <div class="text-green-500 text-2xl">
+                    <i class="fa-brands fa-spotify"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-slate-400 uppercase tracking-widest font-bold">Şu an ne dinliyorum?</p>
+                    <a href="https://open.spotify.com/user/31qaoy2mwffbo5gnupcbl77gdofi?si=81cb695f805e48e5_" target="_blank" class="text-sm hover:text-green-400 transition">Spotify Profilime Göz At</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 animate-bounce">
+            <a href="#about"><i class="fa-solid fa-chevron-down text-2xl text-slate-500"></i></a>
+        </div>
+    </header>
+
+    <section id="about" class="py-24 px-4 bg-[#1e293b]/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 flex items-center">
+                <span class="w-12 h-1 bg-blue-500 mr-4"></span> Hakkımda
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 text-slate-300 leading-relaxed">
+                <p>
+                    Anaokulundan beri bilgisayar başındayım. Yazılım benim için sadece bir meslek değil, uzun yıllardır hayatın doğal bir parçası. Ana uzmanlık alanım <span class="text-blue-400 font-semibold">JavaScript</span> ve <span class="text-blue-400 font-semibold">React</span> tabanlı projeler olsa da; backend, veri analizi ve yapay zekâ tarafında da aktif olarak üretim yapıyorum.
+                </p>
+                <p>
+                    Modern web uygulamaları, API geliştirme, veriyle çalışan sistemler ve ölçeklenebilir mimariler üzerine yoğunlaşıyorum. Amacım yalnızca “çalışan” değil, <strong>doğru, sürdürülebilir ve temiz</strong> yazılım üretmek.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Yetenek Seti</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-brands fa-js text-3xl text-yellow-400 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">JavaScript</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-brands fa-react text-3xl text-cyan-400 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">React</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-brands fa-node-js text-3xl text-green-500 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">Node.js</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-brands fa-python text-3xl text-blue-500 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">Python</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-solid fa-database text-3xl text-emerald-500 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">MongoDB & SQL</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500 transition cursor-default">
+                    <i class="fa-solid fa-robot text-3xl text-purple-500 mb-3"></i>
+                    <p class="font-bold uppercase tracking-wider text-sm">AI & RAG</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-4 bg-[#1e293b]/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Öne Çıkan Çalışmalar</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-solid fa-map-location-dot text-4xl text-blue-400"></i>
+                            <span class="text-xs font-bold px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full uppercase">AI & Map</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">AI Google Maps App</h3>
+                        <p class="text-slate-400 text-sm mb-4">Yapay zeka desteğiyle akıllı konum analizleri ve Google Maps entegrasyonu.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl overflow-hidden hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <i class="fa-brands fa-whatsapp text-4xl text-green-400"></i>
+                            <span class="text-xs font-bold px-3 py-1 bg-green-500/20 text-green-400 rounded-full uppercase">Automation</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Esnaf WhatsApp Bot</h3>
+                        <p class="text-slate-400 text-sm mb-4">Yerel işletmeler için müşteri taleplerini yöneten yapay zeka destekli asistan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Mert Ali Özbey. Tüm hakları saklıdır.</p>
+        <div class="mt-4 flex justify-center gap-6 text-xl">
+            <a href="mailto:mertozbeydev@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://open.spotify.com/user/31qaoy2mwffbo5gnupcbl77gdofi?si=81cb695f805e48e5_" class="hover:text-green-500 transition"><i class="fa-brands fa-spotify"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
